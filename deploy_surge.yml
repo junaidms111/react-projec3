@@ -34,4 +34,4 @@ jobs:
     - name: Install Surge
     - run: npm install -global surge
     - name: Deploy to Surge
-    - run: surge http://react-project03.surge.sh --token ${{secrets.SURGE_TOKEN}}
+    - run: surge ./ react-project03.surge.sh --token ${{secrets.SURGE_TOKEN}}
